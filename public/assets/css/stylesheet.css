@@ -1,60 +1,17 @@
-.container-fluid {
-  padding: 0;
-}
+/* Error: expected "{".
+ *    ,
+ * 74 | test
+ *    |     ^
+ *    '
+ *   src\scss\stylesheet.scss 74:5  root stylesheet */
 
-#sideMenu {
-  background-color: #1F1F2E;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 74 \2502  test\a    \2502      ^\a    \2575 \a   src\\scss\\stylesheet.scss 74:5  root stylesheet';
 }
-#sideMenu .nav {
-  flex-direction: column;
-}
-#sideMenu .nav .nav-item {
-  margin: 0.2rem 0;
-}
-#sideMenu .nav .nav-item .nav-link {
-  color: #A4A6B3;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-#sideMenu .nav .nav-item .nav-link:hover {
-  color: #DDE2FF;
-}
-#sideMenu .nav .nav-item .nav-link .fa-solid {
-  font-size: 1.2rem;
-  min-width: 2rem;
-  text-align: center;
-}
-#sideMenu #sideLogo {
-  color: #A4A6B3;
-  font-size: 1.188rem;
-  font-family: "Mulish", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  text-align: center;
-  padding: 2rem;
-}
-#sideMenu #sideLogo img {
-  padding-right: 0.2rem;
-}
-
-#mainContent {
-  padding: 1rem;
-}
-#mainContent .row .col-md-6 .border {
-  border-radius: 8px;
-  text-align: center;
-  background-color: #f8f9fa;
-}
-
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#header i {
-  color: #C5C7CD;
-}
-
-/*# sourceMappingURL=stylesheet.css.map */
