@@ -1,9 +1,9 @@
 /* Error: expected "{".
  *    ,
- * 74 | test
- *    |     ^
+ * 86 | >>>>>>> ec4203e61b3f37201ba2efcda32d15b7c611ef85
+ *    |                                                 ^
  *    '
- *   src\scss\stylesheet.scss 74:5  root stylesheet */
+ *   src\scss\stylesheet.scss 86:49  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 74 \2502  test\a    \2502      ^\a    \2575 \a   src\\scss\\stylesheet.scss 74:5  root stylesheet';
+  content: 'Error: expected "{".\a    \2577 \a 86 \2502  >>>>>>> ec4203e61b3f37201ba2efcda32d15b7c611ef85\d\a    \2502                                                  ^\a    \2575 \a   src\\scss\\stylesheet.scss 86:49  root stylesheet';
 }
