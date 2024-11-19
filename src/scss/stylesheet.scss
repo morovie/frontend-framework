@@ -2,7 +2,7 @@
     padding: 0;
   }
   
-  .sideLogo {
+  #sideLogo {
     color: #A4A6B3;
     font-size: 1.188rem;
     font-family: "Mulish", sans-serif;
@@ -13,7 +13,7 @@
     padding: 2rem;
   }
   
-  .sideLogo img{
+  #sideLogo img{
     padding-right: .4rem;
   }
   
@@ -29,4 +29,6 @@
       text-decoration: none;
       /* Ensure no underline appears on hover too */
     }
+    
+    .nav-item
   }
