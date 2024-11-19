@@ -43,4 +43,13 @@
   text-align: center;
 }
 
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header i {
+  color: #C5C7CD;
+}
+
 /*# sourceMappingURL=stylesheet.css.map */
