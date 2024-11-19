@@ -1,13 +1,13 @@
-.container-fluid {
-  padding: 0;
+#mainContainer {
+  width: 100vw;
 }
 
 #sideMenu {
   background-color: #1F1F2E;
+  display: none;
 }
 #sideMenu .nav {
   flex-direction: column;
-  display: none;
 }
 #sideMenu .nav .nav-item {
   margin: 0.2rem 0;
@@ -53,7 +53,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: black;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#header div {
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 #header div i {
   color: #C5C7CD;
