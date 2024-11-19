@@ -14,7 +14,7 @@
 }
 
 #sideLogo img {
-  padding-right: .4rem;
+  padding-right: .2rem;
 }
 
 #sideMenu {
@@ -42,7 +42,7 @@
           font-size: 1.2rem; // Adjust icon size if needed
           min-width: 2rem; // Ensure icons have a consistent width yuo
           text-align: center; // Align icons consistently
-        }
+      }
       }
     }
   }
@@ -52,6 +52,8 @@
     display:flex;
     justify-content: space-between;
     align-items: center; 
+
+
     
     i {
         color: #C5C7CD;
