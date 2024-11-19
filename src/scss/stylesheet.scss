@@ -50,12 +50,12 @@
 
 header {
     display:flex;
-    
+
     #headerItems {
 
         i {
             justify-content: space-between;
-            align-items: center;
+            align-items:flex-end;
             color: #C5C7CD;
         }
     }
