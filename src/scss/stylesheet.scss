@@ -48,6 +48,17 @@
   }
 }
 
+#header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center; 
+    
+    i {
+        color: #C5C7CD;
+    }
+    
+}
+
 // #sideMenu {
 //   .nav-link {
 //     color: #A4A6B3;
