@@ -48,16 +48,17 @@
   }
 }
 
-#header {
+header {
     display:flex;
-    justify-content: space-between;
-    align-items: center; 
 
 
-    
-    i {
-        color: #C5C7CD;
+    #headerItems {
+
+        i {
+            color: #C5C7CD;
+        }
     }
+
     
 }
 
