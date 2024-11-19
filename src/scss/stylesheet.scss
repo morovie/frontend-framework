@@ -11,3 +11,7 @@
     color: #DDE2FF; 
     text-decoration: none; /* Ensure no underline appears on hover too */
   }
+
+  .sidebar-sticky > ul > li {
+    padding: 5px 20px 0 20px;
+  }
