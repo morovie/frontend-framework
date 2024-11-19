@@ -64,8 +64,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: black;
+    div {
+        i {
+            color: #C5C7CD;
+          }
 
-  i {
-    color: #C5C7CD;
-  }
+    }
+
 }

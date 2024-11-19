@@ -52,8 +52,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: black;
 }
-#header i {
+#header div i {
   color: #C5C7CD;
 }
 
