@@ -1,81 +1,71 @@
-.container_fluid {
+.container-fluid {
   padding: 0;
 }
 
-#sideLogo {
-  color: #A4A6B3;
-  font-size: 1.188rem;
-  font-family: "Mulish", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  text-align: center;
-  padding: 2rem;
-}
-
-#sideLogo img {
-  padding-right: .2rem;
-}
-
 #sideMenu {
-  background-color: #1F1F2E; // Optional: Add a background color for better visibility
+  background-color: #1F1F2E;
 
   .nav {
-    flex-direction: column; // Stack navigation items vertically
+    flex-direction: column;
 
     .nav-item {
-      margin: 0.2rem 0; // Add spacing between nav items
+      margin: 0.2rem 0;
 
       .nav-link {
         color: #A4A6B3;
-        text-decoration: none; // Remove underline
+        text-decoration: none;
         display: flex;
-        align-items: center; // Align text and icon
-        gap: 0.5rem; // Add spacing between icon and text
+        align-items: center;
+        gap: 0.5rem;
 
         &:hover {
           color: #DDE2FF;
-          text-decoration: none; // Ensure no underline appears on hover
         }
 
         .fa-solid {
-          font-size: 1.2rem; // Adjust icon size if needed
-          min-width: 2rem; // Ensure icons have a consistent width yuo
-          text-align: center; // Align icons consistently
+          font-size: 1.2rem;
+          min-width: 2rem;
+          text-align: center;
+        }
       }
+    }
+  }
+
+  #sideLogo {
+    color: #A4A6B3;
+    font-size: 1.188rem;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    text-align: center;
+    padding: 2rem;
+
+    img {
+      padding-right: 0.2rem;
+    }
+  }
+}
+
+#mainContent {
+  padding: 1rem;
+
+  .row {
+    .col-md-6 {
+      .border {
+        border-radius: 8px; // Optional: Add rounded corners
+        text-align: center;
+        background-color: #f8f9fa; // Optional: Light background
       }
     }
   }
 }
 
 #header {
-    display:flex;
-    justify-content: space-between;
-    align-items: center; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-
-    
-    i {
-        color: #C5C7CD;
-    }
-    
+  i {
+    color: #C5C7CD;
+  }
 }
-
-// #sideMenu {
-//   .nav-link {
-//     color: #A4A6B3;
-//     text-decoration: none;
-//     /* Remove underline */
-//   }
-
-//   .nav-link:hover {
-//     color: #DDE2FF;
-//     text-decoration: none;
-//     /* Ensure no underline appears on hover too */
-//   }
-
-//   .nav-item {
-//       padding: 0 .3rem 0 1rem;
-//   }
-
-// }

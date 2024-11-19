@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
     <title>INM320 Frontend Framework</title>
 
     <!-- CSS Reset -->
@@ -20,13 +20,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-
 </head>
+
 <body>
     <div class="container-fluid g-0">
-
+        <div class="row">
             <!-- Sidebar -->
-           <nav id="sideMenu" class="col-lg-2 col-md- d-md-block bg-dark sidebar position-fixed top-0 h-100">
+            <nav id="sideMenu" class="col-lg-2 col-md-2 d-md-block bg-dark sidebar position-fixed top-0 h-100">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column text-white">
                         <div id="sideLogo">
@@ -34,106 +34,57 @@
                             Dashboard Kit
                         </div>
                         <li class="nav-item">
-                            
-                            <a class="nav-link active" href="#">
-                                <i class="fa-solid fa-chart-pie"></i>
-                                Overview
-                            </a>
+                            <a class="nav-link active" href="#"><i class="fa-solid fa-chart-pie"></i> Overview</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fa-solid fa-ticket"></i>
-                                Tickets
-                            </a>
+                            <a class="nav-link" href="#"><i class="fa-solid fa-ticket"></i> Tickets</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fa-solid fa-lightbulb"></i>
-                                Ideas
-                            </a>
+                            <a class="nav-link" href="#"><i class="fa-solid fa-lightbulb"></i> Ideas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fa-solid fa-user-group"></i>
-                                Contacts
-                            </a>
+                            <a class="nav-link" href="#"><i class="fa-solid fa-user-group"></i> Contacts</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                <i class="fa-solid fa-user-tie"></i>
-                                Agents
-                            </a>
+                            <a class="nav-link active" href="#"><i class="fa-solid fa-user-tie"></i> Agents</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                <i class="fa-solid fa-book"></i>
-                                Articles
-                            </a>
+                            <a class="nav-link active" href="#"><i class="fa-solid fa-book"></i> Articles</a>
                         </li>
                         <hr>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                <i class="fa-solid fa-gear"></i>
-                                Settings
-                            </a>
+                            <a class="nav-link active" href="#"><i class="fa-solid fa-gear"></i> Settings</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                <i class="fa-solid fa-award"></i>
-                                Subscription
-                            </a>
+                            <a class="nav-link active" href="#"><i class="fa-solid fa-award"></i> Subscription</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-        
-        <!-- Header Section -->
-        <header  id="header"class="bg-white text-white text-center">
-            <div >
-                <h1>Overview</h1>
-                <i class="fa-solid fa-bell"></i>
-                <i class="fas fa-search"></i>
-            </div>
-            Jones Ferdinand
-            <img src="assets/images/profilePic.png">
-            
-        </header>
-      
-        <!-- Main Content (8 columns) -->
-        <div class="col-md-8">
-            <div class="p-3 border bg-light">
-            <h3>Main Content</h3>
-            <p>This is the main content of the webpage. You can add articles, blog posts, or any other information here.</p>
-            </div>
-        </div>
-        </div> 
-  </div>
-     <!-- Header Section -->
-  <!-- <header class="bg-primary text-white text-center p-3">
-    <h1>My Bootstrap Website</h1>
-    <p>Using the Bootstrap Grid System</p>
-  </header> -->
 
-  <!-- Main Content Section -->
-  <!-- <div class="container my-4">
-    <div class="row"> -->
-      <!-- Left Sidebar (2 columns) -->
-      <!-- <div class="col-md-4">
-        <div class="p-3 border bg-light">
-          <h3>Sidebar</h3>
-          <p>Links, ads, or additional information can go here.</p>
+            <!-- Main Content -->
+            <div class="col-lg-10 offset-lg-2 col-md-10 offset-md-2">
+                <div id="mainContent" class="container mt-4">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-3 border bg-light">Container 1</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border bg-light">Container 2</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border bg-light">Container 3</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border bg-light">Container 4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-       -->
-      <!-- Main Content (8 columns) -->
-      <!-- <div class="col-md-8">
-        <div class="p-3 border bg-light">
-          <h3>Main Content</h3>
-          <p>This is the main content of the webpage. You can add articles, blog posts, or any other information here.</p>
-        </div>
-      </div>
     </div>
-  </div> -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

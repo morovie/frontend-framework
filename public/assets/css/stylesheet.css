@@ -1,20 +1,5 @@
-.container_fluid {
+.container-fluid {
   padding: 0;
-}
-
-#sideLogo {
-  color: #A4A6B3;
-  font-size: 1.188rem;
-  font-family: "Mulish", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  text-align: center;
-  padding: 2rem;
-}
-
-#sideLogo img {
-  padding-right: 0.2rem;
 }
 
 #sideMenu {
@@ -35,12 +20,32 @@
 }
 #sideMenu .nav .nav-item .nav-link:hover {
   color: #DDE2FF;
-  text-decoration: none;
 }
 #sideMenu .nav .nav-item .nav-link .fa-solid {
   font-size: 1.2rem;
   min-width: 2rem;
   text-align: center;
+}
+#sideMenu #sideLogo {
+  color: #A4A6B3;
+  font-size: 1.188rem;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  text-align: center;
+  padding: 2rem;
+}
+#sideMenu #sideLogo img {
+  padding-right: 0.2rem;
+}
+
+#mainContent {
+  padding: 1rem;
+}
+#mainContent .row .col-md-6 .border {
+  border-radius: 8px;
+  text-align: center;
+  background-color: #f8f9fa;
 }
 
 #header {
