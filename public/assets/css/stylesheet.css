@@ -67,4 +67,10 @@
   color: #C5C7CD;
 }
 
+.graph {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
 /*# sourceMappingURL=stylesheet.css.map */
