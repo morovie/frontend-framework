@@ -19,11 +19,15 @@ header {
   background: white;
   border-bottom: 1px solid #ddd;
 }
-header div i {
-  margin-left: 10px;
+header .icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 header .user-info {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 header .user-info img {
@@ -40,13 +44,13 @@ header .user-info img {
   margin: 15px 0;
 }
 .overview-cards .card {
-  flex: 1;
-  min-width: 150px;
   background: white;
   padding: 15px;
   border-radius: 10px;
-  text-align: center;
   border: 1px solid #ddd;
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
 }
 .overview-cards .card h3 {
   margin-bottom: 10px;
@@ -54,6 +58,8 @@ header .user-info img {
 .overview-cards .card p {
   font-size: 1.2em;
   font-weight: bold;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
 .trends-chart {
@@ -66,6 +72,7 @@ header .user-info img {
 .trends-chart .chart-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
 }
 .trends-chart .chart img {
@@ -81,26 +88,66 @@ header .user-info img {
   border: 1px solid #ddd;
   margin-bottom: 20px;
 }
-.unresolved-tickets h4,
-.tasks h4 {
+.unresolved-tickets .section-header,
+.tasks .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.unresolved-tickets .section-header h4,
+.tasks .section-header h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.unresolved-tickets .section-header .details-link,
+.tasks .section-header .details-link {
+  color: #3f8cff;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin: 0;
+}
+.unresolved-tickets .group-info,
+.tasks .group-info {
+  color: #333;
+  font-size: 0.9em;
   margin-bottom: 15px;
 }
 .unresolved-tickets ul,
 .tasks ul {
+  padding: 0;
   list-style: none;
 }
 .unresolved-tickets ul li,
 .tasks ul li {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
 }
 .unresolved-tickets ul li .status,
 .tasks ul li .status {
-  font-size: 0.9em;
-  color: #3f8cff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  text-align: right;
+  color: #9FA2B4;
+  margin-left: 0.5rem;
 }
 
+@media (min-width: 992px) {
+  .row-container {
+    display: flex;
+    gap: 20px;
+  }
+  .unresolved-tickets,
+  .tasks {
+    flex: 1;
+  }
+}
 @media (max-width: 768px) {
   .overview-cards {
     flex-direction: column;
