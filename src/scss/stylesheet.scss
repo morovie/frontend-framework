@@ -19,11 +19,12 @@ $status-color: #9FA2B4;
   border: 1px solid $border-color;
 }
 
-@mixin text-style($size, $weight: normal, $spacing: 0, $line-height: normal) {
+@mixin text-style($size, $weight: normal, $spacing: 0, $line-height: normal, $color: $text-color) {
   font-size: $size;
   font-weight: $weight;
   letter-spacing: $spacing;
   line-height: $line-height;
+  color: $color;
 }
 
 // Reset
@@ -42,16 +43,11 @@ body {
 }
 
 // Header
-header {
+header.page-header {
   @include flex-center(space-between, center);
   padding: 15px;
   background: white;
   border-bottom: 1px solid $border-color;
-
-  .icon-container {
-    @include flex-center(space-between);
-    gap: 10px;
-  }
 
   .user-info {
     @include flex-center();
@@ -64,7 +60,7 @@ header {
   }
 }
 
-// Dashboard Overview Cards
+// Overview Cards
 .overview-cards {
   display: flex;
   flex-wrap: wrap;
@@ -79,33 +75,80 @@ header {
 
     h3 {
       margin-bottom: 10px;
+      @include text-style(1.2em, bold);
     }
 
     p {
-      @include text-style(1.2em, bold);
+      @include text-style(1.5em, bold);
     }
   }
 }
 
-// Trends Chart
-.trends-chart {
-  @include card-style;
+// Trends and Resolved Metrics Section
+#trends-resolved-metrics {
+  padding: 20px;
   margin-bottom: 20px;
+  border: 1px solid $border-color;
+  border-radius: 10px;
 
-  .chart-header {
-    @include flex-center(space-between);
-    margin-bottom: 10px;
+  .trends-header {
+    text-align: center;
+    margin-bottom: 20px;
+
+    h5 {
+      @include text-style(1em, bold);
+    }
+
+    p {
+      @include text-style(0.9em, normal, 0, 1.2, $status-color);
+    }
   }
 
-  .chart {
-    img {
+  .trends-resolved-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .graph img {
       width: 100%;
-      height: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .metrics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+
+      .metric {
+        flex: 1 1 calc(50% - 10px);
+        text-align: center;
+
+        .label {
+          @include text-style(0.9em, 600, 0, 1.2, $status-color);
+        }
+
+        .value {
+          @include text-style(1.25em, bold);
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .trends-resolved-container {
+      flex-direction: row;
+      .graph {
+        flex: 2;
+      }
+      .metrics {
+        flex: 1;
+      }
     }
   }
 }
 
-// Unresolved Tickets & Tasks
+// Unresolved Tickets and Tasks
 .unresolved-tickets,
 .tasks {
   @include card-style;
@@ -120,17 +163,14 @@ header {
     }
 
     .details-link {
-      color: $primary-color;
-      font-size: 0.9em;
-      font-weight: 600;
-      margin: 0;
+      @include text-style(0.9em, 600, 0, 1.2, $primary-color);
+      text-decoration: none;
     }
   }
 
   .group-info {
-    color: $text-color;
-    font-size: 0.9em;
     margin-bottom: 15px;
+    @include text-style(0.9em, normal);
   }
 
   ul {
@@ -142,36 +182,19 @@ header {
       margin-bottom: 10px;
 
       .status {
-        @include text-style(14px, 600, 0.2px, 20px);
-        text-align: right;
-        color: $status-color;
-        margin-left: 0.5rem;
+        @include text-style(0.9em, 600, 0.2px, 1.5, $status-color);
       }
     }
   }
 }
 
-// Responsive Design
-@media (min-width: 992px) {
-  .row-container {
-    display: flex;
-    gap: 20px;
-  }
-
-  .unresolved-tickets,
-  .tasks {
-    flex: 1;
-  }
-}
-
+// Responsive Adjustments
 @media (max-width: 768px) {
   .overview-cards {
     flex-direction: column;
   }
 
-  .trends-chart,
-  .unresolved-tickets,
-  .tasks {
-    margin-bottom: 15px;
+  .row-container {
+    flex-direction: column;
   }
 }

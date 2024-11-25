@@ -11,7 +11,7 @@ body {
   padding: 10px;
 }
 
-header {
+header.page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,18 +19,12 @@ header {
   background: white;
   border-bottom: 1px solid #ddd;
 }
-header .icon-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-}
-header .user-info {
+header.page-header .user-info {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .user-info img {
+header.page-header .user-info img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -54,30 +48,87 @@ header .user-info img {
 }
 .overview-cards .card h3 {
   margin-bottom: 10px;
-}
-.overview-cards .card p {
   font-size: 1.2em;
   font-weight: bold;
   letter-spacing: 0;
   line-height: normal;
+  color: #333;
+}
+.overview-cards .card p {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: normal;
+  color: #333;
 }
 
-.trends-chart {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
+#trends-resolved-metrics {
+  padding: 20px;
+  margin-bottom: 20px;
   border: 1px solid #ddd;
+  border-radius: 10px;
+}
+#trends-resolved-metrics .trends-header {
+  text-align: center;
   margin-bottom: 20px;
 }
-.trends-chart .chart-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
+#trends-resolved-metrics .trends-header h5 {
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: normal;
+  color: #333;
 }
-.trends-chart .chart img {
+#trends-resolved-metrics .trends-header p {
+  font-size: 0.9em;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 1.2;
+  color: #9FA2B4;
+}
+#trends-resolved-metrics .trends-resolved-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#trends-resolved-metrics .trends-resolved-container .graph img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+#trends-resolved-metrics .trends-resolved-container .metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+#trends-resolved-metrics .trends-resolved-container .metrics .metric {
+  flex: 1 1 calc(50% - 10px);
+  text-align: center;
+}
+#trends-resolved-metrics .trends-resolved-container .metrics .metric .label {
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.2;
+  color: #9FA2B4;
+}
+#trends-resolved-metrics .trends-resolved-container .metrics .metric .value {
+  font-size: 1.25em;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: normal;
+  color: #333;
+}
+@media (min-width: 992px) {
+  #trends-resolved-metrics .trends-resolved-container {
+    flex-direction: row;
+  }
+  #trends-resolved-metrics .trends-resolved-container .graph {
+    flex: 2;
+  }
+  #trends-resolved-metrics .trends-resolved-container .metrics {
+    flex: 1;
+  }
 }
 
 .unresolved-tickets,
@@ -101,19 +152,25 @@ header .user-info img {
   font-weight: bold;
   letter-spacing: 0;
   line-height: normal;
+  color: #333;
 }
 .unresolved-tickets .section-header .details-link,
 .tasks .section-header .details-link {
-  color: #3f8cff;
   font-size: 0.9em;
   font-weight: 600;
-  margin: 0;
+  letter-spacing: 0;
+  line-height: 1.2;
+  color: #3f8cff;
+  text-decoration: none;
 }
 .unresolved-tickets .group-info,
 .tasks .group-info {
-  color: #333;
-  font-size: 0.9em;
   margin-bottom: 15px;
+  font-size: 0.9em;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: normal;
+  color: #333;
 }
 .unresolved-tickets ul,
 .tasks ul {
@@ -129,33 +186,19 @@ header .user-info img {
 }
 .unresolved-tickets ul li .status,
 .tasks ul li .status {
-  font-size: 14px;
+  font-size: 0.9em;
   font-weight: 600;
   letter-spacing: 0.2px;
-  line-height: 20px;
-  text-align: right;
+  line-height: 1.5;
   color: #9FA2B4;
-  margin-left: 0.5rem;
 }
 
-@media (min-width: 992px) {
-  .row-container {
-    display: flex;
-    gap: 20px;
-  }
-  .unresolved-tickets,
-  .tasks {
-    flex: 1;
-  }
-}
 @media (max-width: 768px) {
   .overview-cards {
     flex-direction: column;
   }
-  .trends-chart,
-  .unresolved-tickets,
-  .tasks {
-    margin-bottom: 15px;
+  .row-container {
+    flex-direction: column;
   }
 }
 
