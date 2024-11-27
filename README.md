@@ -11,7 +11,7 @@ Make containers wrap row in mobile view
 
 add border to profile picture
 
-add border or hr to todays trends right containers
+add border or hr to todays trends right containers ✔️
 
 fix styling on URGENT/NEW/DEFAULT in tasks
 
