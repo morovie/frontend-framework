@@ -45,8 +45,8 @@ body {
 
 
 .container {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 // Header
@@ -96,46 +96,49 @@ header.page-header {
     }
   }
 }
- // SIDE MENU
+
+// SIDE MENU
 #sideMenu {
-  
-  padding: 1em 0 0 1em ;
+
+  padding: 1em 0 0 1em;
 
 
-    #sideLogo {
-      padding: 1em 1.2em 2em 0.7em;
-      font-family:'mulish';
-      font-size: 1.2em;
-      img {
-        padding: 0 0.5em 0.2em 0;
-      }
+  #sideLogo {
+    padding: 1em 1.2em 2em 0.7em;
+    font-family: 'mulish';
+    font-size: 1.2em;
+
+    img {
+      padding: 0 0.5em 0.2em 0;
     }
-    .nav {
-      flex-direction: column;
-  
-      .nav-item {
-        margin: 0.2rem 0;
-  
-        .nav-link {
-          color: #A4A6B3;
-          text-decoration: none;
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-  
-          &:hover {
-            color: #DDE2FF;
-          }
-  
-          .fa-solid {
-            font-size: 1.2rem;
-            min-width: 2rem;
-            text-align: center;
-            margin-right: 0.8em;
-          }
+  }
+
+  .nav {
+    flex-direction: column;
+
+    .nav-item {
+      margin: 0.2rem 0;
+
+      .nav-link {
+        color: #A4A6B3;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        &:hover {
+          color: #DDE2FF;
+        }
+
+        .fa-solid {
+          font-size: 1.2rem;
+          min-width: 2rem;
+          text-align: center;
+          margin-right: 0.8em;
         }
       }
     }
+  }
 }
 
 // Overview Cards
@@ -196,12 +199,11 @@ header.page-header {
 
     .metrics {
       display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
+      flex-direction: column; // Stack metrics vertically
       gap: 15px;
 
       .metric {
-        flex: 1 1 calc(50% - 10px);
+        flex: 1; // Ensure each metric takes equal space if needed
         text-align: center;
 
         .label {
@@ -218,9 +220,11 @@ header.page-header {
   @media (min-width: 992px) {
     .trends-resolved-container {
       flex-direction: row;
+
       .graph {
         flex: 2;
       }
+
       .metrics {
         flex: 1;
       }
@@ -277,73 +281,76 @@ header.page-header {
   .row-container {
     flex-direction: column;
   }
-    //Side menu web size!!//
+
+  //Side menu web size!!//
   #sideMenu {
     display: none;
   }
 
 
-  
+
 }
 
 
-  // Larger Screens (Enhance spacing if needed)
-  @media (min-width: 768px) {
-    .right-content {
-      gap: 20px; // Larger gap between items on bigger screens
-    }
+// Larger Screens (Enhance spacing if needed)
+@media (min-width: 768px) {
+  .right-content {
+    gap: 20px; // Larger gap between items on bigger screens
+  }
+
+  .header-title {
+    font-size: 2em; // Slightly larger title on bigger screens
+  }
+
+  header.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7em;
+
 
     .header-title {
-      font-size: 2em; // Slightly larger title on bigger screens
+      @include text-style(1.5em, bold);
+      color: $text-color;
+      margin: 0;
     }
-    header.page-header {
+
+    .right-content {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 0.7em;
-    
-    
-      .header-title {
-        @include text-style(1.5em, bold);
-        color: $text-color;
-        margin: 0;
-      }
-    
-      .right-content {
+      gap: 0.5em; // Space between icons, user name, and user image
+
+      .nav-icons {
         display: flex;
-        align-items: center;
-        gap: 0.5em; // Space between icons, user name, and user image
-    
-        .nav-icons {
-          display: flex;
-          gap: 0.5em; // Space between icons
-    
-          i {
-            font-size: 1.2rem;
-            color: $primary-color;
-            cursor: pointer;
-    
-            &:hover {
-              color: darken($primary-color, 10%);
-            }
+        gap: 0.5em; // Space between icons
+
+        i {
+          font-size: 1.2rem;
+          color: $primary-color;
+          cursor: pointer;
+
+          &:hover {
+            color: darken($primary-color, 10%);
           }
         }
-    
-        .user-name {
-          @include text-style(1em, normal);
-          white-space: nowrap; // Prevents text wrapping
-        }
-    
-        .user-image {
-          width: 3.3em;
-          height: 3.3em;
-          border-radius: 50%;
-          border: 1px solid $border-color;
-        }
       }
+
+      .user-name {
+        @include text-style(1em, normal);
+        white-space: nowrap; // Prevents text wrapping
+      }
+
+      .user-image {
+        width: 3.3em;
+        height: 3.3em;
+        border-radius: 50%;
+        border: 1px solid $border-color;
+      }
+    }
   }
+
+  
   .overview-cards {
     margin: 0 0 2em 0;
   }
-  }
-
+}
