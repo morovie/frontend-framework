@@ -102,6 +102,7 @@ header.page-header .right-content .user-image {
   flex-wrap: wrap;
   gap: 2em;
   margin: 1.5em 0;
+  margin: 7em;
 }
 .overview-cards .card {
   background: white;
@@ -322,6 +323,9 @@ header.page-header .right-content .user-image {
     height: 3.3em;
     border-radius: 50%;
     border: 1px solid #ddd;
+  }
+  .overview-cards {
+    margin: 0 0 2em 0;
   }
 }
 

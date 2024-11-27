@@ -96,7 +96,7 @@ header.page-header {
     }
   }
 }
-
+ // SIDE MENU
 #sideMenu {
   
   padding: 1em 0 0 1em ;
@@ -144,6 +144,7 @@ header.page-header {
   flex-wrap: wrap;
   gap: 2em;
   margin: 1.5em 0;
+  margin: 7em;
 
   .card {
     @include card-style;
@@ -266,7 +267,7 @@ header.page-header {
   }
 }
 
-// Responsive Adjustments
+// Responsive Adjustments  <!-- MOVE THESE TO THE MAIN STYLE PLEASE AND THEN @MEDIA MIN-WIDTH WILL CHANGE IT FOR WEB//
 @media (max-width: 768px) {
   .overview-cards {
     flex-direction: column;
@@ -339,6 +340,9 @@ header.page-header {
           border: 1px solid $border-color;
         }
       }
+  }
+  .overview-cards {
+    margin: 0 0 2em 0;
   }
   }
 
