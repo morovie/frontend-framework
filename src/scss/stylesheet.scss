@@ -169,6 +169,7 @@ header.page-header {
   margin-bottom: 20px;
   border: 1px solid $border-color;
   border-radius: 10px;
+  background-color: white;
 
   .trends-header {
     text-align: center;
@@ -196,11 +197,11 @@ header.page-header {
 
     .metrics {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column; // Stack metrics vertically
       gap: 15px;
 
       .metric {
-        flex: 1 1 calc(50% - 10px);
+        flex: 1; // Ensure each metric takes equal space if needed
         text-align: center;
 
         .label {
