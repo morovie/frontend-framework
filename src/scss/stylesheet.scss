@@ -55,8 +55,6 @@ header.page-header {
   align-items: center;
   justify-content: space-between;
   padding: 0.7em;
-  background: white;
-  border-bottom: 1px solid $border-color;
 
   .header-title {
     @include text-style(1.5em, bold);
@@ -169,7 +167,7 @@ header.page-header {
     }
 
     p {
-      @include text-style(3em, bold);
+      @include text-style(2.6em, bold);
     }
   }
 }

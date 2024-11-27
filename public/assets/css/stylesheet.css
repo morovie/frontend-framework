@@ -21,8 +21,6 @@ header.page-header {
   align-items: center;
   justify-content: space-between;
   padding: 0.7em;
-  background: white;
-  border-bottom: 1px solid #ddd;
 }
 header.page-header .header-title {
   font-size: 1.5em;
@@ -131,7 +129,7 @@ header.page-header .right-content .user-image {
   color: #333;
 }
 .overview-cards .card p {
-  font-size: 3em;
+  font-size: 2.6em;
   font-weight: bold;
   letter-spacing: 0;
   line-height: normal;
