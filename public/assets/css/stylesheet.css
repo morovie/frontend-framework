@@ -101,8 +101,7 @@ header.page-header .right-content .user-image {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
-  margin: 1.5em 0;
-  margin: 7em;
+  margin: 20%;
 }
 .overview-cards .card {
   background: white;
