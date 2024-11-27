@@ -79,7 +79,7 @@ header.page-header {
     }
 
     p {
-      @include text-style(1.5em, bold);
+      @include text-style(3em, bold);
     }
   }
 }
@@ -197,4 +197,10 @@ header.page-header {
   .row-container {
     flex-direction: column;
   }
+    //Side menu web size!!//
+  #sideMenu {
+    display: none;
+    
+  }
+  
 }
