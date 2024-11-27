@@ -187,6 +187,7 @@ header.page-header {
   .trends-resolved-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 
     .graph img {
@@ -198,7 +199,6 @@ header.page-header {
     .metrics {
       display: flex;
       flex-direction: column; // Stack metrics vertically
-      gap: 15px;
 
       .metric {
         flex: 1; // Ensure each metric takes equal space if needed

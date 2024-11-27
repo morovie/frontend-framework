@@ -156,6 +156,7 @@ header.page-header .right-content .user-image {
 #trends-resolved-metrics .trends-resolved-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 #trends-resolved-metrics .trends-resolved-container .graph img {
@@ -166,7 +167,6 @@ header.page-header .right-content .user-image {
 #trends-resolved-metrics .trends-resolved-container .metrics {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 #trends-resolved-metrics .trends-resolved-container .metrics .metric {
   flex: 1;
