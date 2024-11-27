@@ -62,6 +62,7 @@ header.page-header .right-content .user-image {
 }
 
 #sideMenu {
+  display: none;
   padding: 1em 0 0 1em;
 }
 #sideMenu #sideLogo {
@@ -193,17 +194,6 @@ header.page-header .right-content .user-image {
   line-height: normal;
   color: #333;
 }
-@media (min-width: 992px) {
-  #trends-resolved-metrics .trends-resolved-container {
-    flex-direction: row;
-  }
-  #trends-resolved-metrics .trends-resolved-container .graph {
-    flex: 2;
-  }
-  #trends-resolved-metrics .trends-resolved-container .metrics {
-    flex: 1;
-  }
-}
 
 .unresolved-tickets,
 .tasks {
@@ -267,75 +257,50 @@ header.page-header .right-content .user-image {
   color: #9FA2B4;
 }
 
-@media (max-width: 768px) {
+.row-container {
+  display: flex;
+  flex-direction: column;
+}
+.row-container .unresolved-tickets,
+.row-container .tasks {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
   .overview-cards {
-    flex-direction: column;
+    margin: 0 0 2em 0;
   }
   .row-container {
-    flex-direction: column;
+    flex-direction: row;
   }
-  #sideMenu {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
   .right-content {
     gap: 1.25rem;
   }
   .header-title {
     font-size: 2em;
   }
-  header.page-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.7em;
-  }
-  header.page-header .header-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: normal;
-    color: #333;
-    color: #333;
-    margin: 0;
-  }
-  header.page-header .right-content {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-  }
-  header.page-header .right-content .nav-icons {
-    display: flex;
-    gap: 0.5em;
-  }
-  header.page-header .right-content .nav-icons i {
-    font-size: 1.2em;
-    color: #3f8cff;
-    cursor: pointer;
-  }
-  header.page-header .right-content .nav-icons i:hover {
-    color: rgb(12, 109.453125, 255);
-  }
-  header.page-header .right-content .user-name {
-    font-size: 1em;
-    font-weight: normal;
-    letter-spacing: 0;
-    line-height: normal;
-    color: #333;
-    white-space: nowrap;
-  }
-  header.page-header .right-content .user-image {
-    width: 3.3em;
-    height: 3.3em;
-    border-radius: 50%;
-    border: 1px solid #ddd;
-  }
-  .overview-cards {
-    margin: 0 0 2em 0;
+  #sideMenu {
+    display: block;
   }
   hr {
     width: 103%;
+  }
+  #trends-resolved-metrics .trends-resolved-container {
+    flex-direction: row;
+  }
+  #trends-resolved-metrics .trends-resolved-container .graph {
+    flex: 2;
+  }
+  #trends-resolved-metrics .trends-resolved-container .metrics {
+    flex: 1;
+  }
+  .row-container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .row-container .unresolved-tickets,
+  .row-container .tasks {
+    flex: 1;
   }
 }
 
