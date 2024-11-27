@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <main class="col-lg-12 col-md-12  px-md-12 bg-light">
+  <main class="col-lg-12 col-md-12 px-md-12 bg-light">
 
     <!-- Sidebar -->
         <nav id="sideMenu" class="col-md-1.5 d-md-block bg-dark sidebar position-fixed top-0 h-100 row">
@@ -84,85 +84,86 @@
           </div>
         </nav>
     <section class="container-fluid  g-12 col-md-8 gx-5 gap-3">
-  <!-- Header -->
-  <header class="page-header d-flex align-items-center justify-content-between py-3 bg-light">
-    <!-- Left Section: Header Title -->
-    <h1 class="header-title">Overview</h1>
+      <!-- Header -->
+      <header class="page-header d-flex align-items-center justify-content-between py-3 bg-light">
+        <!-- Left Section: Header Title -->
+        <h1 class="header-title">Overview</h1>
 
-    <!-- Right Section: Icons, User Info, User Image -->
-    <div class="right-content d-flex align-items-center gap-3">
-      <nav class="nav-icons d-flex gap-3">
-        <i class="fas fa-search text-secondary"></i>
-        <i class="fa-solid fa-bell text-secondary"></i>
-      </nav>
-      <p class="user-name text-dark fw-semibold mb-0">Jones Ferdinand</p>
-      <img src="assets/images/profilePic.png" alt="User Image" class="user-image rounded-circle" style="border: 4px solid #e2e3e5;">
+        <!-- Right Section: Icons, User Info, User Image -->
+        <div class="right-content d-flex align-items-center gap-3">
+          <nav class="nav-icons d-flex gap-3">
+            <i class="fas fa-search text-secondary opacity-50 "></i>
+            <i class="fa-solid fa-bell text-secondary opacity-50 "></i>
+          </nav>
+          <div></div> <!-- Space/line between both elements-->
+          <p class="user-name text-dark fw-semibold mb-0">Jones Ferdinand</p>
+          <img src="assets/images/profilePic.png" alt="User Image" class="user-image rounded-circle" style="border: 4px solid #e2e3e5;">
 
-    </div>
-  </header>
+        </div>
+      </header>
 
-      <!-- Overview Cards -->
-      <section class="overview-cards col-md-12">
-        <article class="card">
-          <h3>Unresolved</h3>
-          <p>60</p>
-        </article>
-        <article class="card">
-          <h3>Overdue</h3>
-          <p>16</p>
-        </article>
-        <article class="card">
-          <h3>Open</h3>
-          <p>43</p>
-        </article>
-        <article class="card">
-          <h3>On Hold</h3>
-          <p>64</p>
-        </article>
-      </section>
-
-      <!-- Trends and Resolved Metrics -->
-      <section id="trends-resolved-metrics" class="metrics-section  col-md-12">
-        <header class="trends-header">
-          <h5>Today’s Trends</h5>
-          <p>As of 25 May 2019, 09:41 PM</p>
-        </header>
-
-        <div class="trends-resolved-container">
-          <figure class="graph">
-            <img src="assets/images/graph.png" alt="Trends Chart">
-          </figure>
-          <section class="metrics">
-            <article class="metric">
-              <p class="label">Resolved</p>
-              <p class="value">449</p>
+          <!-- Overview Cards -->
+          <section class="overview-cards col-md-12">
+            <article class="card">
+              <h3>Unresolved</h3>
+              <p>60</p>
             </article>
-            <hr>
-            <article class="metric">
-              <p class="label">Received</p>
-              <p class="value">426</p>
+            <article class="card">
+              <h3>Overdue</h3>
+              <p>16</p>
             </article>
-            <hr>
-            <article class="metric">
-              <p class="label">Average first response time</p>
-              <p class="value">33m</p>
+            <article class="card">
+              <h3>Open</h3>
+              <p>43</p>
             </article>
-            <hr>
-            <article class="metric">
-              <p class="label">Average response time</p>
-              <p class="value">3h 8m</p>
-            </article>
-            <hr>
-            <article class="metric">
-              <p class="label">Resolution within SLA</p>
-              <p class="value">94%</p>
+            <article class="card">
+              <h3>On Hold</h3>
+              <p>64</p>
             </article>
           </section>
-        </div>
-      </section>
+
+          <!-- Trends and Resolved Metrics -->
+          <section id="trends-resolved-metrics" class="metrics-section  col-md-11">
+            <header class="trends-header">
+              <h5>Today’s Trends</h5>
+              <p>As of 25 May 2019, 09:41 PM</p>
+            </header>
+
+            <div class="trends-resolved-container">
+              <figure class="graph">
+                <img src="assets/images/graph.png" alt="Trends Chart">
+              </figure>
+              <section class="metrics">
+                <article class="metric">
+                  <p class="label">Resolved</p>
+                  <p class="value">449</p>
+                </article>
+                <hr>
+                <article class="metric">
+                  <p class="label">Received</p>
+                  <p class="value">426</p>
+                </article>
+                <hr>
+                <article class="metric">
+                  <p class="label">Average first response time</p>
+                  <p class="value">33m</p>
+                </article>
+                <hr>
+                <article class="metric">
+                  <p class="label">Average response time</p>
+                  <p class="value">3h 8m</p>
+                </article>
+                <hr>
+                <article class="metric">
+                  <p class="label">Resolution within SLA</p>
+                  <p class="value">94%</p>
+                </article>
+              </section>
+            </div>
+    </section>
 
       <!-- Unresolved Tickets and Tasks -->
-      <section class="row-container col-md-12">
+      <section class="row-container col-md-11">
         <section class="unresolved-tickets col-md-6">
           <header class="section-header">
             <h4>Unresolved Tickets</h4>
@@ -188,11 +189,26 @@
           <p class="group-info">Today</p>
           <p> Create a new task</p>
           <ul id="taskItems">
-            <li><i class="fa-regular fa-circle"></i>Finish ticket update <span class="badge bg-warning">URGENT</span></li>
+            <li>
+              <div>
+                <i class="fa-regular fa-circle fa-lg text-secondary"></i>Finish ticket update
+              </div> 
+              <span class="badge bg-warning">URGENT</span>
+            </li>
             <hr>
-            <li><i class="fa-regular fa-circle"></i>Create new ticket example <span class="badge bg-success">NEW</span></li>
+            <li>
+               <div>
+                  <i class="fa-regular fa-circle fa-lg text-secondary"></i>Create new ticket example
+                </div>
+                <span class="badge bg-success">NEW</span>
+              </li>
             <hr>
-            <li> <i class="fa-regular fa-circle-check"></i>Update ticket report <span class="badge">DEFAULT</span></li>
+            <li> 
+              <div>
+                <i class="fa-regular fa-circle-check fa-lg text-success"></i>Update ticket report 
+              </div>
+              <span class="badge text-secondary bg-light">DEFAULT</span>
+            </li>
           </ul>
         </section>
       </section>

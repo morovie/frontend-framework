@@ -42,11 +42,61 @@ body {
   padding: 0.7em;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-}
 
+
+.container-fluid{
+  // Header
+header.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem;
+
+  .header-title {
+    @include text-style(1.5em, bold);
+    color: $text-color;
+    margin: 0;
+  }
+
+  .right-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+    .nav-icons {
+      display: flex;
+      gap: 0.5em;
+
+      i {
+        font-size: 1.2em;
+        color: $primary-color;
+        cursor: pointer;
+
+        &:hover {
+          color: darken($primary-color, 10%);
+        }
+      }
+    }
+    div {
+      width: 0.1em;
+      height: 1.8em;
+      margin-left: 2em;
+      background-color: rgba(0, 0, 0, 0.11);
+    }
+    .user-name {
+      @include text-style(1em, normal);
+      white-space: nowrap;
+      font-family: 'mulish';
+      padding-left: 1.7em;
+    }
+
+    .user-image {
+      width: 3.3em;
+      height: 3.3em;
+    }
+  }
+}
+}
 // Header
 header.page-header {
   display: flex;
@@ -79,10 +129,17 @@ header.page-header {
         }
       }
     }
-
+    div {
+      width: 0.1em;
+      height: 1.8em;
+      margin-left: 2em;
+      background-color: rgba(0, 0, 0, 0.11);
+    }
     .user-name {
       @include text-style(1em, normal);
       white-space: nowrap;
+      font-family: 'mulish';
+      padding-left: 1.7em;
     }
 
     .user-image {
@@ -254,6 +311,16 @@ header.page-header {
     li {
       @include flex-center(space-between, center);
       margin-bottom: 0.625rem;
+      
+      div{
+        i{
+          padding: 0 1em 0 1em;
+        }
+      }
+      span {
+        padding: 0.8em 2em 0.8em 2em;
+        border-radius: 1em;
+      }
 
       .status {
         @include text-style(0.9em, 600, 0.2px, 1.5, $status-color);
@@ -279,8 +346,20 @@ header.page-header {
 
 // Desktop Styles
 @media (min-width: 768px) {
+
   .overview-cards {
-    margin: 0 0 2em 0;
+    margin: 0 0 1.2em 0;
+    gap: 5.7em;
+    .card {
+      background-color: greenyellow;
+      flex:none;
+      padding: 1em 7em ;
+      margin-left: em;
+      margin-right: -0.2em;
+      
+
+    }
+    
   }
 
   .row-container {

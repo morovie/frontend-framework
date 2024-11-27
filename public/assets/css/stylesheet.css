@@ -11,9 +11,57 @@ body {
   padding: 0.7em;
 }
 
-.container {
+.container-fluid header.page-header {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem;
+}
+.container-fluid header.page-header .header-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: normal;
+  color: #333;
+  color: #333;
+  margin: 0;
+}
+.container-fluid header.page-header .right-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.container-fluid header.page-header .right-content .nav-icons {
+  display: flex;
+  gap: 0.5em;
+}
+.container-fluid header.page-header .right-content .nav-icons i {
+  font-size: 1.2em;
+  color: #3f8cff;
+  cursor: pointer;
+}
+.container-fluid header.page-header .right-content .nav-icons i:hover {
+  color: rgb(12, 109.453125, 255);
+}
+.container-fluid header.page-header .right-content div {
+  width: 0.1em;
+  height: 1.8em;
+  margin-left: 2em;
+  background-color: rgba(0, 0, 0, 0.11);
+}
+.container-fluid header.page-header .right-content .user-name {
+  font-size: 1em;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: normal;
+  color: #333;
+  white-space: nowrap;
+  font-family: "mulish";
+  padding-left: 1.7em;
+}
+.container-fluid header.page-header .right-content .user-image {
+  width: 3.3em;
+  height: 3.3em;
 }
 
 header.page-header {
@@ -48,6 +96,12 @@ header.page-header .right-content .nav-icons i {
 header.page-header .right-content .nav-icons i:hover {
   color: rgb(12, 109.453125, 255);
 }
+header.page-header .right-content div {
+  width: 0.1em;
+  height: 1.8em;
+  margin-left: 2em;
+  background-color: rgba(0, 0, 0, 0.11);
+}
 header.page-header .right-content .user-name {
   font-size: 1em;
   font-weight: normal;
@@ -55,6 +109,8 @@ header.page-header .right-content .user-name {
   line-height: normal;
   color: #333;
   white-space: nowrap;
+  font-family: "mulish";
+  padding-left: 1.7em;
 }
 header.page-header .right-content .user-image {
   width: 3.3em;
@@ -248,6 +304,15 @@ header.page-header .right-content .user-image {
   align-items: center;
   margin-bottom: 0.625rem;
 }
+.unresolved-tickets ul li div i,
+.tasks ul li div i {
+  padding: 0 1em 0 1em;
+}
+.unresolved-tickets ul li span,
+.tasks ul li span {
+  padding: 0.8em 2em 0.8em 2em;
+  border-radius: 1em;
+}
 .unresolved-tickets ul li .status,
 .tasks ul li .status {
   font-size: 0.9em;
@@ -270,7 +335,15 @@ header.page-header .right-content .user-image {
 
 @media (min-width: 768px) {
   .overview-cards {
-    margin: 0 0 2em 0;
+    margin: 0 0 1.2em 0;
+    gap: 5.7em;
+  }
+  .overview-cards .card {
+    background-color: greenyellow;
+    flex: none;
+    padding: 1em 7em;
+    margin-left: em;
+    margin-right: -0.2em;
   }
   .row-container {
     flex-direction: row;
