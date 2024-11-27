@@ -256,13 +256,15 @@ header.page-header .right-content .user-image {
   line-height: 1.5;
   color: #9FA2B4;
 }
-
-.row-container {
+.unresolved-tickets .row-container,
+.tasks .row-container {
   display: flex;
   flex-direction: column;
 }
-.row-container .unresolved-tickets,
-.row-container .tasks {
+.unresolved-tickets .row-container .unresolved-tickets,
+.unresolved-tickets .row-container .tasks,
+.tasks .row-container .unresolved-tickets,
+.tasks .row-container .tasks {
   flex: 1;
 }
 

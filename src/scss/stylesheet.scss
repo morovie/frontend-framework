@@ -260,18 +260,21 @@ header.page-header {
       }
     }
   }
+
+  // Stack Unresolved Tickets and Tasks in a column for mobile
+  .row-container {
+    display: flex;
+    flex-direction: column;
+    
+    .unresolved-tickets,
+    .tasks {
+      flex: 1; // Ensure both take equal width (if needed)
+    }
+  }
 }
 
 // Stack Unresolved Tickets and Tasks in a column for mobile
-.row-container {
-  display: flex;
-  flex-direction: column;
-  
-  .unresolved-tickets,
-  .tasks {
-    flex: 1; // Ensure both take equal width (if needed)
-  }
-}
+
 
 
 // Desktop Styles
