@@ -9,7 +9,7 @@ add FontAwesome to what is needed ✔️
 
 Make containers wrap row in mobile view
 
-add border to profile picture
+add border to profile picture✔️
 
 add border or hr to todays trends right containers ✔️
 
