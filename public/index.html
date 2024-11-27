@@ -84,18 +84,21 @@
           </div>
         </nav>
     <section class="container-fluid  g-12 col-md-8 gx-5 gap-3">
-      <!-- Header -->
-      <header class="page-header">
-        <h1>Overview</h1>
-        <nav>
-          <i class="fas fa-search"></i>
-          <i class="fa-solid fa-bell"></i>
-        </nav>
-        <div class="user-info">
-          <span>Jones Ferdinand</span>
-          <img src="assets/images/profilePic.png" alt="User Image">
-        </div>
-      </header>
+  <!-- Header -->
+  <header class="page-header d-flex align-items-center justify-content-between py-3">
+    <!-- Left Section: Header Title -->
+    <h1 class="header-title">Overview</h1>
+
+    <!-- Right Section: Icons, User Info, User Image -->
+    <div class="right-content d-flex align-items-center gap-3">
+      <nav class="nav-icons d-flex gap-3">
+        <i class="fas fa-search"></i>
+        <i class="fa-solid fa-bell"></i>
+      </nav>
+      <p class="user-name text-dark fw-semibold mb-0">Jones Ferdinand</p>
+      <img src="assets/images/profilePic.png" alt="User Image" class="user-image rounded-circle border border-success-subtle">
+    </div>
+  </header>
 
       <!-- Overview Cards -->
       <section class="overview-cards">

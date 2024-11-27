@@ -18,25 +18,59 @@ body {
 
 header.page-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 15px;
   background: white;
   border-bottom: 1px solid #ddd;
 }
-header.page-header nav {
-  float: right;
+header.page-header .header-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: normal;
+  color: #333;
+  color: #333;
+  margin: 0;
 }
-header.page-header .user-info {
+header.page-header .right-content {
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 10px;
 }
-header.page-header .user-info img {
+header.page-header .right-content .nav-icons {
+  display: flex;
+  gap: 10px;
+}
+header.page-header .right-content .nav-icons i {
+  font-size: 1.2rem;
+  color: #3f8cff;
+  cursor: pointer;
+}
+header.page-header .right-content .nav-icons i:hover {
+  color: rgb(12, 109.453125, 255);
+}
+header.page-header .right-content .user-name {
+  font-size: 1em;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: normal;
+  color: #333;
+  white-space: nowrap;
+}
+header.page-header .right-content .user-image {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-left: 10px;
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  header.page-header .right-content {
+    gap: 20px;
+  }
+  header.page-header .header-title {
+    font-size: 2em;
+  }
 }
 
 #sideMenu {
