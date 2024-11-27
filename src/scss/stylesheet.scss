@@ -56,6 +56,7 @@ header.page-header {
   justify-content: space-between;
   padding: 0.7em;
 
+
   .header-title {
     @include text-style(1.5em, bold);
     color: $text-color;
@@ -92,17 +93,6 @@ header.page-header {
       height: 3.3em;
       border-radius: 50%;
       border: 1px solid $border-color;
-    }
-  }
-
-  // Larger Screens (Enhance spacing if needed)
-  @media (min-width: 768px) {
-    .right-content {
-      gap: 20px; // Larger gap between items on bigger screens
-    }
-
-    .header-title {
-      font-size: 2em; // Slightly larger title on bigger screens
     }
   }
 }
@@ -293,4 +283,62 @@ header.page-header {
 
   
 }
+
+
+  // Larger Screens (Enhance spacing if needed)
+  @media (min-width: 768px) {
+    .right-content {
+      gap: 20px; // Larger gap between items on bigger screens
+    }
+
+    .header-title {
+      font-size: 2em; // Slightly larger title on bigger screens
+    }
+    header.page-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7em;
+    
+    
+      .header-title {
+        @include text-style(1.5em, bold);
+        color: $text-color;
+        margin: 0;
+      }
+    
+      .right-content {
+        display: flex;
+        align-items: center;
+        gap: 0.5em; // Space between icons, user name, and user image
+    
+        .nav-icons {
+          display: flex;
+          gap: 0.5em; // Space between icons
+    
+          i {
+            font-size: 1.2rem;
+            color: $primary-color;
+            cursor: pointer;
+    
+            &:hover {
+              color: darken($primary-color, 10%);
+            }
+          }
+        }
+    
+        .user-name {
+          @include text-style(1em, normal);
+          white-space: nowrap; // Prevents text wrapping
+        }
+    
+        .user-image {
+          width: 3.3em;
+          height: 3.3em;
+          border-radius: 50%;
+          border: 1px solid $border-color;
+        }
+      }
+  }
+  }
 

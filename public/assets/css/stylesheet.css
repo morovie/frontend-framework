@@ -62,14 +62,6 @@ header.page-header .right-content .user-image {
   border-radius: 50%;
   border: 1px solid #ddd;
 }
-@media (min-width: 768px) {
-  header.page-header .right-content {
-    gap: 20px;
-  }
-  header.page-header .header-title {
-    font-size: 2em;
-  }
-}
 
 #sideMenu {
   padding: 1em 0 0 1em;
@@ -276,6 +268,60 @@ header.page-header .right-content .user-image {
   }
   #sideMenu {
     display: none;
+  }
+}
+@media (min-width: 768px) {
+  .right-content {
+    gap: 20px;
+  }
+  .header-title {
+    font-size: 2em;
+  }
+  header.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7em;
+  }
+  header.page-header .header-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: normal;
+    color: #333;
+    color: #333;
+    margin: 0;
+  }
+  header.page-header .right-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  header.page-header .right-content .nav-icons {
+    display: flex;
+    gap: 0.5em;
+  }
+  header.page-header .right-content .nav-icons i {
+    font-size: 1.2rem;
+    color: #3f8cff;
+    cursor: pointer;
+  }
+  header.page-header .right-content .nav-icons i:hover {
+    color: rgb(12, 109.453125, 255);
+  }
+  header.page-header .right-content .user-name {
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: normal;
+    color: #333;
+    white-space: nowrap;
+  }
+  header.page-header .right-content .user-image {
+    width: 3.3em;
+    height: 3.3em;
+    border-radius: 50%;
+    border: 1px solid #ddd;
   }
 }
 
