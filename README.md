@@ -17,7 +17,7 @@ fix styling on URGENT/NEW/DEFAULT in tasks
 
 fix spacing in tasks
 
-MOBILE VIEW: adjust overview size so it's not so wide
+MOBILE VIEW: adjust overview size so it's not so wide ✔️
 
 Change all px to em/rem
 
