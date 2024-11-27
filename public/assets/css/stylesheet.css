@@ -326,6 +326,9 @@ header.page-header .right-content .user-image {
   .overview-cards {
     margin: 0 0 2em 0;
   }
+  .row-container-fluid {
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
