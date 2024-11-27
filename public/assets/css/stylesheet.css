@@ -24,6 +24,7 @@ body {
   line-height: normal;
   color: #333;
   color: #333;
+  font-family: "mulish";
   margin: 0;
 }
 .container-fluid header.page-header .right-content {
@@ -119,7 +120,7 @@ header.page-header .right-content .user-image {
 
 #sideMenu {
   display: none;
-  padding: 1em 0 0 1em;
+  padding: 1em -1em 0 1em;
 }
 #sideMenu #sideLogo {
   padding: 1.9em 1.2em 2em 0.7em;
@@ -157,6 +158,7 @@ header.page-header .right-content .user-image {
   flex-wrap: wrap;
   gap: 2em;
   margin: 20%;
+  font-family: "mulish";
 }
 .overview-cards .card {
   background: white;
@@ -336,13 +338,12 @@ header.page-header .right-content .user-image {
 @media (min-width: 768px) {
   .overview-cards {
     margin: 0 0 1.2em 0;
-    gap: 5.7em;
+    gap: 3em;
   }
   .overview-cards .card {
     background-color: greenyellow;
     flex: none;
-    padding: 1em 7em;
-    margin-left: em;
+    padding: 1em 6em;
     margin-right: -0.2em;
   }
   .row-container {

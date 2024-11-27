@@ -4,6 +4,7 @@ $secondary-color: #f6f8fc;
 $text-color: #333;
 $border-color: #ddd;
 $status-color: #9FA2B4;
+$font-family: 'mulish';
 
 // Mixins
 @mixin flex-center($justify: center, $align: center) {
@@ -55,6 +56,7 @@ header.page-header {
   .header-title {
     @include text-style(1.5em, bold);
     color: $text-color;
+    font-family: $font-family;
     margin: 0;
   }
 
@@ -86,7 +88,7 @@ header.page-header {
     .user-name {
       @include text-style(1em, normal);
       white-space: nowrap;
-      font-family: 'mulish';
+      font-family: $font-family;
       padding-left: 1.7em;
     }
 
@@ -138,7 +140,7 @@ header.page-header {
     .user-name {
       @include text-style(1em, normal);
       white-space: nowrap;
-      font-family: 'mulish';
+      font-family: $font-family;
       padding-left: 1.7em;
     }
 
@@ -152,11 +154,11 @@ header.page-header {
 // SIDE MENU
 #sideMenu {
   display: none;
-  padding: 1em 0 0 1em;
+  padding: 1em -1em 0 1em;
 
   #sideLogo {
     padding: 1.9em 1.2em 2em 0.7em;
-    font-family: 'mulish';
+    font-family: $font-family;
     font-size: 1.2em;
 
     img {
@@ -198,6 +200,7 @@ header.page-header {
   flex-wrap: wrap;
   gap: 2em;
   margin: 20%;
+  font-family: $font-family;
 
   .card {
     @include card-style;
@@ -349,12 +352,11 @@ header.page-header {
 
   .overview-cards {
     margin: 0 0 1.2em 0;
-    gap: 5.7em;
+    gap: 3em;
     .card {
       background-color: greenyellow;
       flex:none;
-      padding: 1em 7em ;
-      margin-left: em;
+      padding: 1em 6em ;
       margin-right: -0.2em;
       
 
