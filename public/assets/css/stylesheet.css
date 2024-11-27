@@ -165,11 +165,11 @@ header.page-header .right-content .user-image {
 }
 #trends-resolved-metrics .trends-resolved-container .metrics {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 15px;
 }
 #trends-resolved-metrics .trends-resolved-container .metrics .metric {
-  flex: 1;
+  flex: 1 1 calc(50% - 10px);
   text-align: center;
 }
 #trends-resolved-metrics .trends-resolved-container .metrics .metric .label {
