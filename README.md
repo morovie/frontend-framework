@@ -21,7 +21,7 @@ fix spacing in tasks/trends
 
 MOBILE VIEW: adjust overview size so it's not so wide ✔️
 
-Change all px to em/rem
+Change all px to em/rem ✔️ mylan -- only where i thought it made most sense to do
 
 MAKE SURE ITS MOBILE VIEW FIRST IN SCSS
 
