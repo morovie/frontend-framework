@@ -16,7 +16,7 @@ $font-family: 'mulish';
 @mixin card-style {
   background: white;
   padding: 1em;
-  border-radius: 0.8em;
+  border-radius: 0.5em;
   border: 1px solid $border-color;
 }
 
@@ -160,6 +160,7 @@ header.page-header {
     padding: 1.9em 1.2em 2em 0.7em;
     font-family: $font-family;
     font-size: 1.2em;
+    margin: 0 0 0 0.7em;
 
     img {
       padding: 0 0.5em 0.2em 0;
@@ -170,7 +171,7 @@ header.page-header {
     flex-direction: column;
 
     .nav-item {
-      margin: 0.5rem 4em 0.5rem 0 ;
+      margin: 0.5rem 4em 0.5rem 0.3em ;
 
       .nav-link {
         color: #A4A6B3;
@@ -354,13 +355,10 @@ header.page-header {
     margin: 2em 0 2em 0;
     gap: 3em;
     .card {
-      background-color: greenyellow;
       flex:1 ;
       flex-wrap: wrap;
       padding: 1em 6em ;
       margin-right: -0.2em;
-      
-
     }
     
   }

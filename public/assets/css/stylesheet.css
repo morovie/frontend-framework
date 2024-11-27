@@ -126,6 +126,7 @@ header.page-header .right-content .user-image {
   padding: 1.9em 1.2em 2em 0.7em;
   font-family: "mulish";
   font-size: 1.2em;
+  margin: 0 0 0 0.7em;
 }
 #sideMenu #sideLogo img {
   padding: 0 0.5em 0.2em 0;
@@ -134,7 +135,7 @@ header.page-header .right-content .user-image {
   flex-direction: column;
 }
 #sideMenu .nav .nav-item {
-  margin: 0.5rem 4em 0.5rem 0;
+  margin: 0.5rem 4em 0.5rem 0.3em;
 }
 #sideMenu .nav .nav-item .nav-link {
   color: #A4A6B3;
@@ -163,7 +164,7 @@ header.page-header .right-content .user-image {
 .overview-cards .card {
   background: white;
   padding: 1em;
-  border-radius: 0.8em;
+  border-radius: 0.5em;
   border: 1px solid #ddd;
   flex: 1;
   min-width: 9.375rem;
@@ -257,7 +258,7 @@ header.page-header .right-content .user-image {
 .tasks {
   background: white;
   padding: 1em;
-  border-radius: 0.8em;
+  border-radius: 0.5em;
   border: 1px solid #ddd;
   margin-bottom: 1.25rem;
 }
@@ -341,7 +342,6 @@ header.page-header .right-content .user-image {
     gap: 3em;
   }
   .overview-cards .card {
-    background-color: greenyellow;
     flex: 1;
     flex-wrap: wrap;
     padding: 1em 6em;
