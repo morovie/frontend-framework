@@ -165,6 +165,7 @@ header.page-header .right-content .user-image {
 }
 #trends-resolved-metrics .trends-resolved-container .metrics {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 15px;
 }
