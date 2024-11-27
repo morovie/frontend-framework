@@ -151,14 +151,24 @@ header.page-header {
     flex: 1;
     min-width: 150px;
     text-align: center;
+    transition: color 0.3s ease;
 
     h3 {
       margin-bottom: 10px;
       @include text-style(1.2em, bold);
+      transition: color 0.3s ease;
     }
 
     p {
       @include text-style(2.6em, bold);
+      transition: color 0.3s ease;
+    }
+
+    &:hover {
+      border-color: $primary-color; // Change border to blue
+      h3, p {
+        color: $primary-color; // Change text color to blue
+      }
     }
   }
 }

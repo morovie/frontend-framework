@@ -5,7 +5,7 @@ TO DO:  ✔️✔️
 
 add FontAwesome to what is needed ✔️
 
-:hover Animations 
+:hover Animations for overview cards✔️
 
 Make containers wrap row in mobile view
 
