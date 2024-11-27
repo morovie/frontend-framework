@@ -24,6 +24,9 @@ header.page-header {
   background: white;
   border-bottom: 1px solid #ddd;
 }
+header.page-header nav {
+  float: right;
+}
 header.page-header .user-info {
   display: flex;
   justify-content: center;
@@ -37,13 +40,12 @@ header.page-header .user-info img {
 }
 
 #sideMenu {
-  margin-left: -2em;
-  padding: 1em 0 0 0;
+  padding: 1em 0 0 1em;
 }
 #sideMenu #sideLogo {
-  padding: 1em 0 2em 1em;
+  padding: 1em 1.2em 2em 0.7em;
   font-family: "mulish";
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 #sideMenu #sideLogo img {
   padding: 0 0.5em 0.2em 0;
@@ -68,6 +70,7 @@ header.page-header .user-info img {
   font-size: 1.2rem;
   min-width: 2rem;
   text-align: center;
+  margin-right: 0.8em;
 }
 
 .overview-cards {

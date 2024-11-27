@@ -56,6 +56,10 @@ header.page-header {
   background: white;
   border-bottom: 1px solid $border-color;
 
+  nav{
+    float: right;
+  }
+
   .user-info {
     @include flex-center();
     img {
@@ -68,13 +72,14 @@ header.page-header {
 }
 
 #sideMenu {
-  margin-left: -2em;
-  padding: 1em 0 0 0 ;
+  
+  padding: 1em 0 0 1em ;
+
 
     #sideLogo {
-      padding: 1em 0 2em 1em;
+      padding: 1em 1.2em 2em 0.7em;
       font-family:'mulish';
-      font-size: 1.4em;
+      font-size: 1.2em;
       img {
         padding: 0 0.5em 0.2em 0;
       }
@@ -100,6 +105,7 @@ header.page-header {
             font-size: 1.2rem;
             min-width: 2rem;
             text-align: center;
+            margin-right: 0.8em;
           }
         }
       }
@@ -246,7 +252,8 @@ header.page-header {
     //Side menu web size!!//
   #sideMenu {
     display: none;
-    
   }
+
+
   
 }
