@@ -15,8 +15,8 @@ $status-color: #9FA2B4;
 
 @mixin card-style {
   background: white;
-  padding: 15px;
-  border-radius: 10px;
+  padding: 1em;
+  border-radius: 0.8em;
   border: 1px solid $border-color;
 }
 
@@ -40,7 +40,7 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: $secondary-color;
   color: $text-color;
-  padding: 10px;
+  padding: 0.7em;
 }
 
 
@@ -54,7 +54,7 @@ header.page-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  padding: 0.7em;
   background: white;
   border-bottom: 1px solid $border-color;
 
@@ -67,11 +67,11 @@ header.page-header {
   .right-content {
     display: flex;
     align-items: center;
-    gap: 10px; // Space between icons, user name, and user image
+    gap: 0.5em; // Space between icons, user name, and user image
 
     .nav-icons {
       display: flex;
-      gap: 10px; // Space between icons
+      gap: 0.5em; // Space between icons
 
       i {
         font-size: 1.2rem;
@@ -90,8 +90,8 @@ header.page-header {
     }
 
     .user-image {
-      width: 40px;
-      height: 40px;
+      width: 3.3em;
+      height: 3.3em;
       border-radius: 50%;
       border: 1px solid $border-color;
     }

@@ -8,7 +8,7 @@ body {
   font-family: "Arial", sans-serif;
   background-color: #f6f8fc;
   color: #333;
-  padding: 10px;
+  padding: 0.7em;
 }
 
 .container {
@@ -20,7 +20,7 @@ header.page-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  padding: 0.7em;
   background: white;
   border-bottom: 1px solid #ddd;
 }
@@ -36,11 +36,11 @@ header.page-header .header-title {
 header.page-header .right-content {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.5em;
 }
 header.page-header .right-content .nav-icons {
   display: flex;
-  gap: 10px;
+  gap: 0.5em;
 }
 header.page-header .right-content .nav-icons i {
   font-size: 1.2rem;
@@ -59,8 +59,8 @@ header.page-header .right-content .user-name {
   white-space: nowrap;
 }
 header.page-header .right-content .user-image {
-  width: 40px;
-  height: 40px;
+  width: 3.3em;
+  height: 3.3em;
   border-radius: 50%;
   border: 1px solid #ddd;
 }
@@ -115,8 +115,8 @@ header.page-header .right-content .user-image {
 }
 .overview-cards .card {
   background: white;
-  padding: 15px;
-  border-radius: 10px;
+  padding: 1em;
+  border-radius: 0.8em;
   border: 1px solid #ddd;
   flex: 1;
   min-width: 150px;
@@ -210,8 +210,8 @@ header.page-header .right-content .user-image {
 .unresolved-tickets,
 .tasks {
   background: white;
-  padding: 15px;
-  border-radius: 10px;
+  padding: 1em;
+  border-radius: 0.8em;
   border: 1px solid #ddd;
   margin-bottom: 20px;
 }
