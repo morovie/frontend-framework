@@ -337,7 +337,7 @@ header.page-header .right-content .user-image {
 
 @media (min-width: 768px) {
   .overview-cards {
-    margin: 0 0 1.2em 0;
+    margin: 2em 0 2em 0;
     gap: 3em;
   }
   .overview-cards .card {
