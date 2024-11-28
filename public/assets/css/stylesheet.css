@@ -181,7 +181,7 @@ header.page-header .right-content .user-image {
   transition: color 0.3s ease;
 }
 .overview-cards .card p {
-  font-size: 2.6em;
+  font-size: 2.5em;
   font-weight: bold;
   letter-spacing: 0;
   line-height: normal;
@@ -240,14 +240,14 @@ header.page-header .right-content .user-image {
   text-align: center;
 }
 #trends-resolved-metrics .trends-resolved-container .metrics .metric .label {
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 600;
   letter-spacing: 0;
   line-height: 1.2;
   color: #9FA2B4;
 }
 #trends-resolved-metrics .trends-resolved-container .metrics .metric .value {
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: bold;
   letter-spacing: 0;
   line-height: normal;
@@ -289,7 +289,7 @@ header.page-header .right-content .user-image {
 .unresolved-tickets .group-info,
 .tasks .group-info {
   margin-bottom: 0.938rem;
-  font-size: 0.9em;
+  font-size: 0.75em;
   font-weight: normal;
   letter-spacing: 0;
   line-height: normal;

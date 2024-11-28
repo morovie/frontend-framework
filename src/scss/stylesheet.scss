@@ -217,7 +217,7 @@ header.page-header {
     }
 
     p {
-      @include text-style(2.6em, bold);
+      @include text-style(2.5em, bold);
       transition: color 0.3s ease;
     }
 
@@ -272,11 +272,11 @@ header.page-header {
         text-align: center;
 
         .label {
-          @include text-style(0.9em, 600, 0, 1.2, $status-color);
+          @include text-style(1em, 600, 0, 1.2, $status-color);
         }
 
         .value {
-          @include text-style(1.25em, bold);
+          @include text-style(1.5em, bold);
         }
       }
     }
@@ -305,8 +305,9 @@ header.page-header {
 
   .group-info {
     margin-bottom: 0.938rem;
-    @include text-style(0.9em, normal);
+    @include text-style(0.75em, normal);
   }
+
 
   ul {
     padding: 0;
@@ -327,7 +328,7 @@ header.page-header {
       }
 
       .status {
-        @include text-style(0.9em, 600, 0.2px, 1.5, $status-color);
+        @include text-style(.9em, 600, 0.2px, 1.5, $status-color);
       }
     }
   }
