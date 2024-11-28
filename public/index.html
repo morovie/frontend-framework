@@ -24,65 +24,65 @@
   <main class="col-lg-12 col-md-12 px-md-12 bg-light">
 
     <!-- Sidebar -->
-        <nav id="sideMenu" class="col-md-1.5 d-md-block bg-dark sidebar position-fixed top-0 h-100 row">
-          <div class="sidebar-sticky">
-            <ul class="nav flex-column text-white">
-              <div id="sideLogo" class="text-secondary">
-                <img src="/assets/images/logo.png">
-                Dashboard Kit
-              </div>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <i class="fa-solid fa-chart-pie"></i>
-                  Overview
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fa-solid fa-ticket"></i>
-                  Tickets
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fa-solid fa-lightbulb"></i>
-                  Ideas
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fa-solid fa-user-group"></i>
-                  Contacts
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <i class="fa-solid fa-user-tie"></i>
-                  Agents
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <i class="fa-solid fa-book"></i>
-                  Articles
-                </a>
-              </li>
-              <hr>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <i class="fa-solid fa-gear"></i>
-                  Settings
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <i class="fa-solid fa-award"></i>
-                  Subscription
-                </a>
-              </li>
-            </ul>
+    <nav id="sideMenu" class="col-md-1.5 d-md-block bg-dark sidebar position-fixed top-0 h-100 row">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column text-white">
+          <div id="sideLogo" class="text-secondary">
+            <img src="/assets/images/logo.png">
+            Dashboard Kit
           </div>
-        </nav>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <i class="fa-solid fa-chart-pie"></i>
+              Overview
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa-solid fa-ticket"></i>
+              Tickets
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa-solid fa-lightbulb"></i>
+              Ideas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa-solid fa-user-group"></i>
+              Contacts
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <i class="fa-solid fa-user-tie"></i>
+              Agents
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <i class="fa-solid fa-book"></i>
+              Articles
+            </a>
+          </li>
+          <hr>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <i class="fa-solid fa-gear"></i>
+              Settings
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <i class="fa-solid fa-award"></i>
+              Subscription
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <section class="container-fluid  g-12 col-md-8 gx-5 gap-3">
       <!-- Header -->
       <header class="page-header d-flex align-items-center justify-content-between py-3 bg-light">
@@ -97,70 +97,73 @@
           </nav>
           <div></div> <!-- Space/line between both elements-->
           <p class="user-name text-dark fw-semibold mb-0">Jones Ferdinand</p>
-          <img src="assets/images/profilePic.png" alt="User Image" class="user-image rounded-circle" style="border: 4px solid #e2e3e5;">
+          <img src="assets/images/profilePic.png" alt="User Image" class="user-image rounded-circle"
+            style="border: 4px solid #e2e3e5;">
 
         </div>
       </header>
 
-          <!-- Overview Cards -->
-          <section class="overview-cards col-md-12">
-            <article class="card">
-              <h3>Unresolved</h3>
-              <p>60</p>
+      <!-- Overview Cards -->
+      <section class="overview-cards col-md-12">
+        <article class="card">
+          <h3>Unresolved</h3>
+          <p>60</p>
+        </article>
+        <article class="card">
+          <h3>Overdue</h3>
+          <p>16</p>
+        </article>
+        <article class="card">
+          <h3>Open</h3>
+          <p>43</p>
+        </article>
+        <article class="card">
+          <h3>On Hold</h3>
+          <p>64</p>
+        </article>
+      </section>
+
+      <!-- Trends and Resolved Metrics -->
+      <section id="trends-resolved-metrics" class="metrics-section  col-md-12">
+        <header class="trends-header">
+
+            <h5>Today’s Trends</h5>
+            <p>As of 25 May 2019, 09:41 PM</p>
+
+        </header>
+
+        <div class="trends-resolved-container">
+          <figure class="graph">
+            <img src="assets/images/graph.png" alt="Trends Chart">
+          </figure>
+          <section class="metrics">
+            <article class="metric">
+              <p class="label">Resolved</p>
+              <p class="value">449</p>
             </article>
-            <article class="card">
-              <h3>Overdue</h3>
-              <p>16</p>
+            <hr>
+            <article class="metric">
+              <p class="label">Received</p>
+              <p class="value">426</p>
             </article>
-            <article class="card">
-              <h3>Open</h3>
-              <p>43</p>
+            <hr>
+            <article class="metric">
+              <p class="label">Average first response time</p>
+              <p class="value">33m</p>
             </article>
-            <article class="card">
-              <h3>On Hold</h3>
-              <p>64</p>
+            <hr>
+            <article class="metric">
+              <p class="label">Average response time</p>
+              <p class="value">3h 8m</p>
+            </article>
+            <hr>
+            <article class="metric">
+              <p class="label">Resolution within SLA</p>
+              <p class="value">94%</p>
             </article>
           </section>
-
-          <!-- Trends and Resolved Metrics -->
-          <section id="trends-resolved-metrics" class="metrics-section  col-md-12">
-            <header class="trends-header">
-              <h5>Today’s Trends</h5>
-              <p>As of 25 May 2019, 09:41 PM</p>
-            </header>
-
-            <div class="trends-resolved-container">
-              <figure class="graph">
-                <img src="assets/images/graph.png" alt="Trends Chart">
-              </figure>
-              <section class="metrics">
-                <article class="metric">
-                  <p class="label">Resolved</p>
-                  <p class="value">449</p>
-                </article>
-                <hr>
-                <article class="metric">
-                  <p class="label">Received</p>
-                  <p class="value">426</p>
-                </article>
-                <hr>
-                <article class="metric">
-                  <p class="label">Average first response time</p>
-                  <p class="value">33m</p>
-                </article>
-                <hr>
-                <article class="metric">
-                  <p class="label">Average response time</p>
-                  <p class="value">3h 8m</p>
-                </article>
-                <hr>
-                <article class="metric">
-                  <p class="label">Resolution within SLA</p>
-                  <p class="value">94%</p>
-                </article>
-              </section>
-            </div>
-    </section>
+        </div>
+      </section>
 
       <!-- Unresolved Tickets and Tasks -->
       <section class="row-container col-md-12">
@@ -186,28 +189,28 @@
             <h4>Tasks</h4>
             <a href="#" class="details-link">View all</a>
           </header>
-          <p class="group-info">Today </p> 
+          <p class="group-info">Today </p>
           <p> Create a new task
             <img src="assets/images/task create.svg" class="float-end" alt="Task Create">
-          </p> 
+          </p>
           <ul id="taskItems">
             <li>
               <div>
                 <i class="fa-regular fa-circle fa-lg text-secondary"></i>Finish ticket update
-              </div> 
+              </div>
               <span class="badge bg-warning">URGENT</span>
             </li>
             <hr>
             <li>
-               <div>
-                  <i class="fa-regular fa-circle fa-lg text-secondary"></i>Create new ticket example
-                </div>
-                <span class="badge bg-success">NEW</span>
-              </li>
-            <hr>
-            <li> 
               <div>
-                <i class="fa-regular fa-circle-check fa-lg text-success"></i>Update ticket report 
+                <i class="fa-regular fa-circle fa-lg text-secondary"></i>Create new ticket example
+              </div>
+              <span class="badge bg-success">NEW</span>
+            </li>
+            <hr>
+            <li>
+              <div>
+                <i class="fa-regular fa-circle-check fa-lg text-success"></i>Update ticket report
               </div>
               <span class="badge text-secondary bg-light">DEFAULT</span>
             </li>
@@ -218,4 +221,5 @@
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
