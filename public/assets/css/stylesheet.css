@@ -5,10 +5,13 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
   background-color: #f6f8fc;
   color: #333;
   padding: 0.7em;
+}
+
+main {
+  font-family: "mulish";
 }
 
 .container-fluid header.page-header {
@@ -24,7 +27,6 @@ body {
   line-height: normal;
   color: #333;
   color: #333;
-  font-family: "mulish";
   margin: 0;
 }
 .container-fluid header.page-header .right-content {
@@ -57,7 +59,6 @@ body {
   line-height: normal;
   color: #333;
   white-space: nowrap;
-  font-family: "mulish";
   padding-left: 1.7em;
 }
 .container-fluid header.page-header .right-content .user-image {
@@ -110,7 +111,6 @@ header.page-header .right-content .user-name {
   line-height: normal;
   color: #333;
   white-space: nowrap;
-  font-family: "mulish";
   padding-left: 1.7em;
 }
 header.page-header .right-content .user-image {
@@ -124,7 +124,6 @@ header.page-header .right-content .user-image {
 }
 #sideMenu #sideLogo {
   padding: 1.9em 1.2em 2em 0.7em;
-  font-family: "mulish";
   font-size: 1.2em;
   margin: 0 0 0 0.7em;
 }
@@ -159,7 +158,6 @@ header.page-header .right-content .user-image {
   flex-wrap: wrap;
   gap: 2em;
   margin: 20%;
-  font-family: "mulish";
 }
 .overview-cards .card {
   background: white;
@@ -276,6 +274,7 @@ header.page-header .right-content .user-image {
   letter-spacing: 0;
   line-height: normal;
   color: #333;
+  margin-bottom: -0.7em;
 }
 .unresolved-tickets .section-header .details-link,
 .tasks .section-header .details-link {
@@ -311,9 +310,13 @@ header.page-header .right-content .user-image {
 .tasks ul li div i {
   padding: 0 1em 0 1em;
 }
+.unresolved-tickets ul li #defaultBadge,
+.tasks ul li #defaultBadge {
+  opacity: 50%;
+}
 .unresolved-tickets ul li span,
 .tasks ul li span {
-  padding: 0.8em 2em 0.8em 2em;
+  padding: 0.8em 1.8em 0.8em 1.8em;
   border-radius: 1em;
 }
 .unresolved-tickets ul li .status,
@@ -379,6 +382,9 @@ header.page-header .right-content .user-image {
   .row-container .unresolved-tickets,
   .row-container .tasks {
     flex: 1;
+  }
+  .tasks .group-info {
+    margin-bottom: 4em;
   }
 }
 
