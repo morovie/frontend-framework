@@ -284,6 +284,9 @@ header.page-header {
 .tasks {
   @include card-style;
   margin-bottom: 1.25rem;
+  #taskItems{
+    margin-left: -1em;
+  }
 
   .section-header {
     @include flex-center(space-between);
@@ -292,20 +295,30 @@ header.page-header {
     h4 {
       @include text-style(1.2em, bold);
       margin-bottom: -0.7em;
+      margin-left: 0.5em;
+      margin-top: 1em;
     }
 
     .details-link {
-      @include text-style(0.9em, 600, 0, 1.2, $primary-color);
+      @include text-style(1.1em, 600, 0, 1.2, $primary-color);
       text-decoration: none;
+
     }
+  }
+  
+  p {
+    margin-left: 1em;
   }
 
   .group-info {
     margin-bottom: 0.938rem;
+    margin-left: 1em;
     @include text-style(0.75em, normal);
   }
 
-
+  #unresolvedTicketItems{
+    margin-left:1em;
+  }
   ul {
     padding: 0;
     list-style: none;
@@ -329,7 +342,7 @@ header.page-header {
       }
 
       .status {
-        @include text-style(.9em, 600, 0.2px, 1.5, $status-color);
+        @include text-style(1em, 600, 0.2px, 1.5, $status-color);
       }
     }
   }
@@ -342,6 +355,13 @@ header.page-header {
     .unresolved-tickets,
     .tasks {
       flex: 1; // Ensure both take equal width (if needed)
+    }
+    
+  }
+  #taskItems {
+    margin-top: 1em;
+    li{
+      padding: 0.6em;
     }
   }
 }
@@ -415,8 +435,7 @@ header.page-header {
   //tasks section
   .tasks{
     .group-info{ 
-      margin-bottom: 4em;
-
+      margin-bottom: 2.5em;
     }
   }
 }

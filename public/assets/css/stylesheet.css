@@ -260,6 +260,10 @@ header.page-header .right-content .user-image {
   border: 1px solid #ddd;
   margin-bottom: 1.25rem;
 }
+.unresolved-tickets #taskItems,
+.tasks #taskItems {
+  margin-left: -1em;
+}
 .unresolved-tickets .section-header,
 .tasks .section-header {
   display: flex;
@@ -275,24 +279,35 @@ header.page-header .right-content .user-image {
   line-height: normal;
   color: #333;
   margin-bottom: -0.7em;
+  margin-left: 0.5em;
+  margin-top: 1em;
 }
 .unresolved-tickets .section-header .details-link,
 .tasks .section-header .details-link {
-  font-size: 0.9em;
+  font-size: 1.1em;
   font-weight: 600;
   letter-spacing: 0;
   line-height: 1.2;
   color: #3f8cff;
   text-decoration: none;
 }
+.unresolved-tickets p,
+.tasks p {
+  margin-left: 1em;
+}
 .unresolved-tickets .group-info,
 .tasks .group-info {
   margin-bottom: 0.938rem;
+  margin-left: 1em;
   font-size: 0.75em;
   font-weight: normal;
   letter-spacing: 0;
   line-height: normal;
   color: #333;
+}
+.unresolved-tickets #unresolvedTicketItems,
+.tasks #unresolvedTicketItems {
+  margin-left: 1em;
 }
 .unresolved-tickets ul,
 .tasks ul {
@@ -321,7 +336,7 @@ header.page-header .right-content .user-image {
 }
 .unresolved-tickets ul li .status,
 .tasks ul li .status {
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 600;
   letter-spacing: 0.2px;
   line-height: 1.5;
@@ -337,6 +352,14 @@ header.page-header .right-content .user-image {
 .tasks .row-container .unresolved-tickets,
 .tasks .row-container .tasks {
   flex: 1;
+}
+.unresolved-tickets #taskItems,
+.tasks #taskItems {
+  margin-top: 1em;
+}
+.unresolved-tickets #taskItems li,
+.tasks #taskItems li {
+  padding: 0.6em;
 }
 
 @media (min-width: 768px) {
@@ -384,7 +407,7 @@ header.page-header .right-content .user-image {
     flex: 1;
   }
   .tasks .group-info {
-    margin-bottom: 4em;
+    margin-bottom: 2.5em;
   }
 }
 
