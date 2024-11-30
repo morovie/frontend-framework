@@ -26,8 +26,13 @@ Change all px to em/rem ✔️ mylan -- only where i thought it made most sense 
 
 MAKE SURE ITS MOBILE VIEW FIRST IN SCSS ✔️
 
+<<<<<<< HEAD
 Double check all fonts are correct ✔️
 
 Make sure everything is spaced correctly like the example✔️
+=======
+Double check all fonts are correct   ✔️
 
-FIX THE GODDAM FUCKING RAAKIGRJBAKEJGBKJB HR TO FIT THE WHOLE CONTAINER WHY IS IT SO DIFFICULT ᕙ( ᗒᗣᗕ )ᕗ
+Make sure everything is spaced correctly like the example 
+>>>>>>> ee688795c7b36a6de51865a471cc8ad1c77c90b3
+
